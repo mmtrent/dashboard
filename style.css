@@ -11,12 +11,28 @@ body {
 }
 
 .menu {
-    padding: 8px;
+    padding: 10px;
     color: #f7fee7;
     background-color: #84cc16;
     font-weight: 700;
     font-size: 16pt;
     grid-column: 1 / 2;
+}
+
+.menulist {
+    padding-left: 0;
+}
+
+.menulist li {
+    font-size: 12pt;
+    padding: 5px 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menulist img {
+    padding-right: 10px;
 }
 
 .logo {
@@ -28,19 +44,6 @@ body {
 .logo img{
     height: 1.5em;
 }
-
-.filter-white {
-    filter: invert(100%) sepia(0%) saturate(283%) hue-rotate(194deg) brightness(118%) contrast(100%);
-}
-
-.filter-green {
-    filter: invert(78%) sepia(51%) saturate(1743%) hue-rotate(32deg) brightness(94%) contrast(83%);
-}
-
-.filter-brown {
-    filter: invert(44%) sepia(11%) saturate(3120%) hue-rotate(357deg) brightness(93%) contrast(105%);
-}
-
 
 .body {
     grid-column: 2 / 3;
@@ -91,7 +94,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 #toprighticons > * {
@@ -120,10 +123,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #headerbuttons button {
+    font-weight: 600;
     background-color: #84cc16;
     color: white;
     border: none;
@@ -137,7 +141,7 @@ body {
     background-color: #e2e8f0;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 2fr;
 }
 
 .projects {
@@ -147,12 +151,14 @@ body {
     grid-template-rows: repeat(2, 1fr);
     gap: 25px;
     padding: 10px;
+    padding-bottom: 40px;
 }
 
 .card {
-    padding: 5px;
+    border-left: 8px solid #a16207;
+    padding: 20px 5px 15px 5px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 2px 3px 5px rgb(156, 156, 156);
     background-color: white;
     height: 200px;
@@ -163,17 +169,20 @@ body {
 }
 
 #announcements {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-right: 10px;
+    padding-left: 10px;
     grid-column: 2 / 3;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 25px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
 
 }
 
 .announcementcard {
-    padding: 5px;
+    padding: 20px 20px 30px 20px;
     text-align: left;
     border-radius: 15px;
     box-shadow: 2px 3px 5px rgb(156, 156, 156);
@@ -181,6 +190,47 @@ body {
 
 }
 
+#projecttitle {
+    font-size: 16pt;
+    padding-left: 10px;
+}
+
+#announcementheader {
+    font-size: 16pt;
+    padding-left: 10px;
+}
+
+.announcementtext {
+    font-size: 10pt;
+    font-weight: 400;
+}
 p {
     margin: 0;
+}
+
+#trendingtitle {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 16pt;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.filter-white {
+    filter: invert(100%) sepia(0%) saturate(283%) hue-rotate(194deg) brightness(118%) contrast(100%);
+}
+
+.filter-green {
+    filter: invert(78%) sepia(51%) saturate(1743%) hue-rotate(32deg) brightness(94%) contrast(83%);
+}
+
+.filter-brown {
+    filter: invert(44%) sepia(11%) saturate(3120%) hue-rotate(357deg) brightness(93%) contrast(105%);
 }
