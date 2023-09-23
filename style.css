@@ -13,7 +13,7 @@ body {
 .menu {
     padding: 10px;
     color: #f7fee7;
-    background-color: #84cc16;
+    background-color: #14532d;
     font-weight: 700;
     font-size: 16pt;
     grid-column: 1 / 2;
@@ -123,12 +123,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
+    gap: 20px;
 }
 
 #headerbuttons button {
     font-weight: 600;
-    background-color: #84cc16;
+    background-color: #14532d;
     color: white;
     border: none;
     border-radius: 20px;
